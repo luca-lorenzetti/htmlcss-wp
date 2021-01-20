@@ -1,21 +1,24 @@
 /***** CSS RESET *****/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /**********************/
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     color: #929292;
 }
-.clearfix::after{
+
+.clearfix::after {
     display: table;
     content: "";
     clear: both;
 }
-.main-overlay::after{
-    content: ""; 
+
+.main-overlay::after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -25,54 +28,59 @@ body{
     border-radius: 10px;
 
 }
-.container{
+
+.container {
     width: 75%;
     height: 200vh;
     margin: 0 auto;
 }
 
 /* Header */
-header{
+header {
     width: 100%;
     height: 10%;
 }
 
-#logo{
-    border-right: 1px solid rgba(130,130,130, 0.8);
+#logo {
+    border-right: 1px solid rgba(130, 130, 130, 0.8);
     padding-right: 40px;
     width: 14%;
 }
 
-nav{
+nav {
     margin: 50px 0;
 }
-nav ul{
+
+nav ul {
     list-style: none;
 }
-nav li{
+
+nav li {
     display: inline-block;
 }
-nav a{
+
+nav a {
     color: #858585;
     text-decoration: none;
     margin-right: 10px;
 }
+
 /* ******************** */
 
-main{
+main {
     width: 100%;
     height: 80%;
 }
 
 /* Style sections */
-section{
+section {
     margin-top: 30px;
     border-radius: 10px;
     position: relative;
 
 }
 
-#jumbotron{
+#jumbotron {
     background-image: url("../img/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,7 +90,7 @@ section{
     position: relative;
 }
 
-.card{
+.card {
     position: absolute;
     left: 4%;
     bottom: 15%;
@@ -91,45 +99,54 @@ section{
     z-index: 1;
 }
 
-#floating-section{
-    height: 80vh;
+#floating-section {
+    height: 45%;
 }
+
 /* ******************* */
 
 /* Floating section */
 
-.row{
+.row {
     height: 15%;
     padding: 20px 0;
 }
-.row > h2{
+
+.row>h2 {
     color: black;
     font-weight: bolder;
     font-size: 30px;
 }
-.floating-row{
+
+.floating-row {
     width: 100%;
-    height: 85%;
+    height: 90%;
     position: relative;
 }
-.col{
+
+.col {
     float: left;
-    height: 98%;
     margin-top: 1%;
     margin-bottom: 1%;
     border-radius: 10px;
 }
-
-.col-left, .col-right{
+/* Regole colonne */
+.col-left,
+.col-right {
     width: 21.5%;
-    height: 97%;
+    height: 100%;
 }
-.col-center{
+
+.col-center {
     width: 54%;
+    height: 100%;
     margin-right: 1.5%;
     margin-left: 1.5%;
 }
-.img-col-left, .img-col-right, .img-col-center{
+
+.img-col-left,
+.img-col-right,
+.img-col-center {
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
@@ -137,32 +154,42 @@ section{
     position: relative;
     border-radius: 10px;
 }
-.img-col-left{
+
+.img-col-left {
     background-image: url("../img/img-1.jpg");
     background-size: cover;
 }
-.img-col-center{
+
+.img-col-center {
     background-image: url("../img/banner-2.jpg");
     background-repeat: no-repeat;
-    background-position: 0px 46% ;
+    background-position: 0px 46%;
     background-size: cover;
 
 }
-.img-col-right{
+
+.img-col-right {
     background-image: url("../img/img-3.jpg");
     background-size: auto 100%;
 
 }
 
-.content-col h3{
+.content-col h3 {
     margin-top: 30px;
     margin-bottom: 10px;
-
 }
+
 /* ******************* */
 
-footer{
-    background-color: purple;
-    height: 15vh;
+footer {
+    line-height: 200px;
+    vertical-align: bottom;
     margin-top: 10px;
+    text-align: center;
+
+}
+
+footer span {
+    color: red;
+
 }
