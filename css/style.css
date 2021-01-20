@@ -1,0 +1,68 @@
+/***** CSS RESET *****/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**********************/
+
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.container{
+    width: 90%;
+    height: 200vh;
+    margin: 0 auto;
+}
+
+header{
+    background-color: pink;
+    height: 20vh;
+    width: 100%;
+}
+/* Style sections */
+section{
+    margin-top: 30px;
+}
+#jumbotron{
+    background-color: goldenrod;
+    height: 80vh;
+}
+
+#floating-section{
+    background-color: dodgerblue;
+    height: 80vh;
+}
+/* ******************* */
+
+/* Floating section */
+.row, .col{
+    background-color: turquoise;
+}
+.row{
+    height: 15%;
+}
+.col{
+    float: left;
+    height: calc( 100% - 20% );
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.col-left, .col-right{
+    width: 24%;
+}
+.col-center{
+    width: 50%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+/* ******************* */
+
+footer{
+    background-color: purple;
+    height: 15vh;
+    margin-top: 10px;
+}
